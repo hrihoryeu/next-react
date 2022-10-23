@@ -1,2 +1,6 @@
 export { default as ArrowIcon } from './arrow.svg'
 export { default as StarIcon } from './star.svg'
+export { default as BooksIcon } from './books.svg'
+export { default as CoursesIcon } from './courses.svg'
+export { default as ProductsIcon } from './products.svg'
+export { default as ServicesIcon } from './services.svg'
