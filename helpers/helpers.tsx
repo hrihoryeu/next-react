@@ -7,29 +7,37 @@ import {
   ServicesIcon,
 } from "../assets/images"
 
+import styles from "./helpers.module.css"
+
 export const firstLevelMenu: FirstLevelMenuItem[] = [
   {
     route: "courses",
     name: "Courses",
-    icon: <CoursesIcon />,
+    icon: <CoursesIcon className={styles.icon} />,
     id: TopLevelCategory.Courses,
   },
   {
     route: "services",
     name: "Services",
-    icon: <ServicesIcon />,
+    icon: <ServicesIcon className={styles.icon} />,
     id: TopLevelCategory.Services,
   },
   {
     route: "books",
     name: "Books",
-    icon: <BooksIcon />,
+    icon: <BooksIcon className={styles.icon} />,
     id: TopLevelCategory.Books,
   },
   {
     route: "products",
     name: "Products",
-    icon: <ProductsIcon />,
+    icon: <ProductsIcon className={styles.icon} />,
     id: TopLevelCategory.Products,
   },
 ]
+
+export const priceRu = (price: number): string =>
+  price
+    .toString()
+    .replace(/\B(?=(\d{3})+(?!\d))/g, " ")
+    .concat(" ₽")

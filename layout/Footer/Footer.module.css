@@ -15,7 +15,7 @@
 
 @media (max-width: 765px) {
   .footer {
-    grid-template-columns: minmax(320px, 1fr);
+    grid-template-columns: minmax(285px, 1fr);
     grid-template-rows: auto auto auto;
     column-gap: 40px;
   }
